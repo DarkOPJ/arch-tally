@@ -1,0 +1,504 @@
+<x-dc>
+<helmet>
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwRGFWfOw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwYGFWfOw.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwTGFWfOw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwSGFWfOw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("94a8e002-b580-433a-9443-02d5e2098cf6") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwRGFWfOw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwYGFWfOw.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwTGFWfOw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwSGFWfOw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("94a8e002-b580-433a-9443-02d5e2098cf6") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwRGFWfOw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwYGFWfOw.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwTGFWfOw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwSGFWfOw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("94a8e002-b580-433a-9443-02d5e2098cf6") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geistmono/v6/or3nQ6H-1_WfwkMZI_qYFrodmgPn.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geistmono/v6/or3nQ6H-1_WfwkMZI_qYFrMdmgPn.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* symbols2 */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geistmono/v6/or3nQ6H-1_WfwkMZI_qYFg08vz7ehw.woff2) format('woff2');
+  unicode-range: U+2000-2001, U+2004-2008, U+200A, U+23B8-23BD, U+2500-259F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geistmono/v6/or3nQ6H-1_WfwkMZI_qYFrgdmgPn.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geistmono/v6/or3nQ6H-1_WfwkMZI_qYFrkdmgPn.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("e78c8b6a-0164-433f-9256-4db6aa6118ca") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geistmono/v6/or3nQ6H-1_WfwkMZI_qYFrodmgPn.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geistmono/v6/or3nQ6H-1_WfwkMZI_qYFrMdmgPn.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* symbols2 */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geistmono/v6/or3nQ6H-1_WfwkMZI_qYFg08vz7ehw.woff2) format('woff2');
+  unicode-range: U+2000-2001, U+2004-2008, U+200A, U+23B8-23BD, U+2500-259F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geistmono/v6/or3nQ6H-1_WfwkMZI_qYFrgdmgPn.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geistmono/v6/or3nQ6H-1_WfwkMZI_qYFrkdmgPn.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("e78c8b6a-0164-433f-9256-4db6aa6118ca") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+.t-light{--bg:linear-gradient(180deg,#FFF9FB 0%,#FBF1F6 55%,#F3E6F2 100%);--side:#FAF0F5;--side-active:rgba(140,29,58,.07);--surface:#FFFFFF;--surface-2:#FCF5F8;--line:#EEDFE7;--line-strong:#DCC6D2;--text:#1F1A1E;--muted:#6B5C66;--accent:#8C1D3A;--accent-fill:#8C1D3A;--on-accent:#FFFFFF;--accent-soft:#F7E4EB;--ring:linear-gradient(90deg,#A5343F 0%,#C41F62 48%,#3E1453 100%);--note:#7A4FA0;--badge:#6D3BD8;--shadow:0 1px 3px rgba(90,20,50,.08)}
+.t-dark{--bg:#212121;--side:#171717;--side-active:#2A2A2A;--surface:#2A2A2A;--surface-2:#262626;--line:#333333;--line-strong:#4A4A4A;--text:#ECECEC;--muted:#A3A3A3;--accent:#F27A98;--accent-fill:#B32A4E;--on-accent:#FFFFFF;--accent-soft:#3A262C;--ring:linear-gradient(90deg,#C4444F 0%,#E2357D 48%,#7A3BA8 100%);--note:#C9A9EA;--badge:#8B5CF6;--shadow:none}
+body{margin:0}
+button,input,textarea{font:inherit;color:inherit}
+a{color:var(--accent)}a:hover{color:var(--text)}
+::placeholder{color:var(--muted);opacity:1}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+input[type=checkbox]{width:16px;height:16px;accent-color:var(--accent-fill);margin:0}
+</style>
+</helmet>
+<div class="{{themeClass}}" style="min-height: 960px; display: flex; flex-wrap: wrap; align-items: stretch; background: var(--bg); color: var(--text); font-family: 'Geist', system-ui, sans-serif; font-size: 14px; line-height: 1.55">
+
+  <aside style="flex: 1 1 248px; max-width: 100%; box-sizing: border-box; background: var(--side); border-right: 1px solid var(--line); padding: 20px 16px; display: flex; flex-direction: column; gap: 24px">
+    <div style="display: flex; align-items: center; gap: 10px; padding: 0 8px">
+      <div style="width: 24px; height: 24px; border-radius: 6px; background: var(--accent-fill); color: var(--on-accent); display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 12px">T</div>
+      <div style="font-weight: 600; font-size: 15px; letter-spacing: -0.01em">Tally</div>
+      <button type="button" sc-camel-on-click="{{toggleTheme}}" aria-label="{{themeLabel}}" title="{{themeLabel}}" style="margin-left: auto; width: 36px; height: 36px; flex: 0 0 auto; display: flex; align-items: center; justify-content: center; border: 1px solid var(--line); border-radius: 8px; background: transparent; color: var(--muted); cursor: pointer"><sc-if value="{{isDark}}" hint-placeholder-val="{{ false }}"><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg></sc-if><sc-if value="{{isLight}}" hint-placeholder-val="{{ true }}"><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"></path></svg></sc-if></button>
+    </div>
+    <a href="Empty.dc.html" style="display: flex; align-items: center; gap: 8px; height: 40px; padding: 0 12px; border: 1px solid var(--line-strong); border-radius: 8px; text-decoration: none; font-weight: 500">
+      <svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg>New chat</a>
+    <nav aria-label="Main" style="display: flex; flex-direction: column; gap: 2px">
+      <a href="Main.dc.html" style="display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-radius: 8px; text-decoration: none; color: var(--muted)"><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"></path></svg>Chats</a>
+      <a href="Picker.dc.html" style="display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-radius: 8px; text-decoration: none; font-weight: 500; background: var(--side-active)"><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h6l2 2h10v10H3z"></path></svg>Browse sources</a>
+      <a href="Library.dc.html" style="display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-radius: 8px; text-decoration: none; color: var(--muted)"><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"></path><path d="M14 3v5h5"></path></svg>Library</a>
+      <a href="Sources.dc.html" style="display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-radius: 8px; text-decoration: none; color: var(--muted)"><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"></ellipse><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"></path></svg>Connections</a>
+      <a href="Settings.dc.html" style="display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-radius: 8px; text-decoration: none; color: var(--muted)"><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><circle cx="12" cy="12" r="3"></circle><path d="M4 12h3M17 12h3M12 4v3M12 17v3"></path></svg>Settings</a>
+    </nav>
+    <div style="display: flex; flex-direction: column; gap: 2px">
+      <div style="font-size: 11px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); padding: 0 8px 8px">Connected sources</div>
+      <sc-for list="{{conns}}" as="c" hint-placeholder-count="4">
+        <button type="button" sc-camel-on-click="{{c.pick}}" style="display: flex; align-items: center; justify-content: space-between; gap: 8px; width: 100%; padding: 8px 10px; border: 1px solid {{c.border}}; border-radius: 8px; background: var(--surface); cursor: pointer; text-align: left">
+          <span>{{c.name}}</span>
+          <span style="font-family: 'Geist Mono', monospace; font-size: 11px; color: var(--muted)">{{c.count}}</span>
+        </button>
+      </sc-for>
+      <a href="Sources.dc.html" style="padding: 8px 10px; font-size: 13px; color: var(--muted)">+ Connect a source</a>
+    </div>
+  </aside>
+
+  <main style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column">
+    <header style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 32px; border-bottom: 1px solid var(--line)">
+      <nav aria-label="Breadcrumb" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; color: var(--muted)">
+        <a href="#" style="color: var(--muted); text-decoration: none">{{connName}}</a><span aria-hidden="true">/</span>
+        <a href="#" style="color: var(--muted); text-decoration: none">Sales</a><span aria-hidden="true">/</span>
+        <a href="#" style="color: var(--muted); text-decoration: none">2026</a><span aria-hidden="true">/</span>
+        <span style="color: var(--text); font-weight: 500">Q3 Reviews</span>
+      </nav>
+      <div style="display: flex; gap: 8px">
+        <button type="button" style="height: 36px; padding: 0 14px; border: 1px solid var(--line-strong); border-radius: 8px; background: var(--surface); cursor: pointer; font-size: 13px">Upload files</button>
+        <button type="button" style="height: 36px; padding: 0 14px; border: 1px solid var(--line-strong); border-radius: 8px; background: var(--surface); cursor: pointer; font-size: 13px">Sync folder</button>
+      </div>
+    </header>
+
+    <sc-if value="{{isSelect}}" hint-placeholder-val="{{ true }}">
+      <div style="flex: 1; padding: 32px; display: flex; flex-direction: column; gap: 24px">
+        <div style="display: flex; flex-direction: column; gap: 6px">
+          <h1 style="margin: 0; font-size: 22px; font-weight: 600; letter-spacing: -0.01em">Pick files to ask about</h1>
+          <p style="margin: 0; color: var(--muted); max-width: 620px">Select any files in this folder. Tally reads and indexes them on the spot, so you can start asking while it works. Files already in your library are reused.</p>
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center">
+          <label style="display: flex; align-items: center; gap: 8px; height: 36px; padding: 0 12px; border: 1px solid var(--line); border-radius: 8px; color: var(--muted); flex: 1 1 260px; max-width: 360px">
+            <svg width="15" height="15" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+            <input type="search" placeholder="Filter files in Q3 Reviews" aria-label="Filter files" style="border: none; outline: none; background: transparent; width: 100%; font-size: 13px">
+          </label>
+          <button type="button" style="height: 36px; padding: 0 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); font-size: 13px; color: var(--muted); cursor: pointer">Type: All</button>
+          <button type="button" style="height: 36px; padding: 0 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); font-size: 13px; color: var(--muted); cursor: pointer">Modified: Any time</button>
+          <span style="flex: 1"></span>
+          <button type="button" sc-camel-on-click="{{selectAll}}" style="height: 36px; padding: 0 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); font-size: 13px; cursor: pointer">{{allLabel}}</button>
+        </div>
+
+        <div style="border: 1px solid var(--line); border-radius: 10px; overflow-x: auto">
+          <sc-raw-table style="width: 100%; border-collapse: collapse; font-size: 13px; min-width: 720px">
+            <sc-raw-thead>
+              <sc-raw-tr style="text-align: left; color: var(--muted)">
+                <sc-raw-th style="width: 44px; padding: 10px 0 10px 16px; border-bottom: 1px solid var(--line)"><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Select</span></sc-raw-th>
+                <sc-raw-th style="padding: 10px 12px; font-weight: 500; border-bottom: 1px solid var(--line)">Name</sc-raw-th>
+                <sc-raw-th style="padding: 10px 12px; font-weight: 500; border-bottom: 1px solid var(--line)">Type</sc-raw-th>
+                <sc-raw-th style="padding: 10px 12px; font-weight: 500; border-bottom: 1px solid var(--line); text-align: right">Size</sc-raw-th>
+                <sc-raw-th style="padding: 10px 12px; font-weight: 500; border-bottom: 1px solid var(--line)">Modified</sc-raw-th>
+                <sc-raw-th style="padding: 10px 12px; font-weight: 500; border-bottom: 1px solid var(--line)">Owner</sc-raw-th>
+                <sc-raw-th style="padding: 10px 16px 10px 12px; font-weight: 500; border-bottom: 1px solid var(--line)">In library</sc-raw-th>
+              </sc-raw-tr>
+            </sc-raw-thead>
+            <sc-raw-tbody>
+              <sc-for list="{{files}}" as="f" hint-placeholder-count="9">
+                <sc-raw-tr style="background: {{f.bg}}">
+                  <sc-raw-td style="padding: 12px 0 12px 16px; border-bottom: 1px solid var(--line)"><input type="checkbox" checked="{{f.checked}}" sc-camel-on-change="{{f.toggle}}" aria-label="Select {{f.name}}"></sc-raw-td>
+                  <sc-raw-td style="padding: 12px; border-bottom: 1px solid var(--line); font-weight: 500">{{f.name}}</sc-raw-td>
+                  <sc-raw-td style="padding: 12px; border-bottom: 1px solid var(--line)"><span style="display: inline-flex; height: 22px; align-items: center; padding: 0 8px; border: 1px solid var(--line); border-radius: 5px; font-family: 'Geist Mono', monospace; font-size: 11px; color: var(--muted)">{{f.type}}</span></sc-raw-td>
+                  <sc-raw-td style="padding: 12px; border-bottom: 1px solid var(--line); text-align: right; font-family: 'Geist Mono', monospace; font-size: 12px; color: var(--muted)">{{f.size}}</sc-raw-td>
+                  <sc-raw-td style="padding: 12px; border-bottom: 1px solid var(--line); color: var(--muted)">{{f.modified}}</sc-raw-td>
+                  <sc-raw-td style="padding: 12px; border-bottom: 1px solid var(--line); color: var(--muted)">{{f.owner}}</sc-raw-td>
+                  <sc-raw-td style="padding: 12px 16px 12px 12px; border-bottom: 1px solid var(--line); color: var(--muted)">{{f.status}}</sc-raw-td>
+                </sc-raw-tr>
+              </sc-for>
+            </sc-raw-tbody>
+          </sc-raw-table>
+        </div>
+      </div>
+
+      <div style="position: sticky; bottom: 0; border-top: 1px solid var(--line); background: var(--surface); padding: 16px 32px; display: flex; flex-wrap: wrap; align-items: center; gap: 16px">
+        <div style="display: flex; flex-direction: column; line-height: 1.35">
+          <span style="font-weight: 600">{{selCount}} selected</span>
+          <span style="font-size: 12px; color: var(--muted)">{{selDetail}}</span>
+        </div>
+        <span style="flex: 1"></span>
+        <button type="button" sc-camel-on-click="{{clear}}" style="height: 40px; padding: 0 16px; border: 1px solid var(--line-strong); border-radius: 8px; background: var(--surface); cursor: pointer">Clear</button>
+        <button type="button" sc-camel-on-click="{{start}}" style="height: 40px; padding: 0 18px; border: 1px solid var(--accent); border-radius: 8px; background: var(--accent-fill); color: var(--on-accent); font-weight: 500; cursor: pointer">Ingest &amp; start asking</button>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{isIngest}}" hint-placeholder-val="{{ false }}">
+      <div style="flex: 1; padding: 32px; display: flex; flex-direction: column; gap: 28px; max-width: 880px; width: 100%; box-sizing: border-box; margin: 0 auto">
+        <div style="display: flex; flex-direction: column; gap: 6px">
+          <h1 style="margin: 0; font-size: 22px; font-weight: 600; letter-spacing: -0.01em">{{ingestTitle}}</h1>
+          <p style="margin: 0; color: var(--muted)">Ask now — answers use each file as soon as it reaches Ready, and say which files were still processing.</p>
+        </div>
+        <div style="border: 1px solid var(--line); border-radius: 10px">
+          <sc-for list="{{chosen}}" as="f" hint-placeholder-count="3">
+            <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px; padding: 14px 16px; border-bottom: 1px solid var(--line)">
+              <span style="display: inline-flex; height: 22px; align-items: center; padding: 0 8px; border: 1px solid var(--line); border-radius: 5px; font-family: 'Geist Mono', monospace; font-size: 11px; color: var(--muted)">{{f.type}}</span>
+              <span style="font-weight: 500; flex: 1 1 200px; min-width: 0">{{f.name}}</span>
+              <span style="flex: 1 1 180px; height: 6px; border: 1px solid var(--line-strong); border-radius: 999px; overflow: hidden"><span style="display: block; height: 100%; width: {{f.pct}}%; background: var(--accent-fill)"></span></span>
+              <span style="width: 120px; font-family: 'Geist Mono', monospace; font-size: 12px; color: var(--muted); text-align: right">{{f.stage}}</span>
+              <a href="Viewer.dc.html" style="font-size: 12px; color: var(--muted)">View</a>
+            </div>
+          </sc-for>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border: 1px solid var(--line); border-radius: 10px">
+          <div style="padding: 14px 16px; border-right: 1px solid var(--line)"><div style="font-size: 12px; color: var(--muted)">1 · Read</div><div style="font-size: 13px">Text, tables, slides</div></div>
+          <div style="padding: 14px 16px; border-right: 1px solid var(--line)"><div style="font-size: 12px; color: var(--muted)">2 · Chunk</div><div style="font-size: 13px">Rows &amp; sections</div></div>
+          <div style="padding: 14px 16px; border-right: 1px solid var(--line)"><div style="font-size: 12px; color: var(--muted)">3 · Embed</div><div style="font-size: 13px">Vector + keyword</div></div>
+          <div style="padding: 14px 16px"><div style="font-size: 12px; color: var(--muted)">4 · Ready</div><div style="font-size: 13px">Searchable in chat</div></div>
+        </div>
+
+        <div style="border: 2px solid transparent; border-radius: 14px; background: linear-gradient(var(--surface), var(--surface)) padding-box, var(--ring) border-box">
+          <label for="ask2" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Ask about the selected files</label>
+          <textarea id="ask2" rows="2" placeholder="Ask about these files — e.g. “Summarise East vs West pipeline for Q3”" style="display: block; width: 100%; box-sizing: border-box; border: none; outline: none; resize: none; padding: 16px 16px 4px; background: transparent; font-size: 14px"></textarea>
+          <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 8px 10px 10px 12px">
+            <span style="display: inline-flex; align-items: center; height: 30px; padding: 0 10px; border: 1px solid var(--line); border-radius: 999px; font-size: 12px; color: var(--muted)">Scope: {{selCount}} selected files</span>
+            <span style="flex: 1"></span>
+            <a href="Main.dc.html" aria-label="Send" style="width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--accent); border-radius: 9px; background: var(--accent-fill); color: var(--on-accent)">
+              <svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>
+            </a>
+          </div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px">
+          <a href="Main.dc.html" style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border: 1px solid var(--line-strong); border-radius: 999px; text-decoration: none; font-size: 13px">Summarise these files</a>
+          <a href="Main.dc.html" style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border: 1px solid var(--line-strong); border-radius: 999px; text-decoration: none; font-size: 13px">Which deals are at risk?</a>
+          <a href="Main.dc.html" style="display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border: 1px solid var(--line-strong); border-radius: 999px; text-decoration: none; font-size: 13px">Compare reps by attainment</a>
+          <button type="button" sc-camel-on-click="{{back}}" style="min-height: 36px; padding: 0 14px; border: 1px solid transparent; background: transparent; font-size: 13px; color: var(--muted); cursor: pointer; text-decoration: underline">Change selection</button>
+        </div>
+      </div>
+    </sc-if>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;theme&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;light&quot;,&quot;dark&quot;],&quot;default&quot;:&quot;light&quot;},&quot;$preview&quot;:{&quot;width&quot;:1440,&quot;height&quot;:960}}">
+class Component extends DCLogic {
+  initTheme(p) {
+    if (p && p.theme) return p.theme;
+    try { const v = window.localStorage.getItem('tally-theme'); if (v === 'dark' || v === 'light') return v; } catch (e) {}
+    return 'light';
+  }
+  componentDidUpdate(prev) {
+    if (this.props.theme && prev.theme !== this.props.theme) this.setState({ theme: this.props.theme });
+  }
+  themeVals() {
+    const d = this.state.theme === 'dark';
+    return {
+      themeClass: d ? 't-dark' : 't-light',
+      isDark: d,
+      isLight: !d,
+      themeLabel: d ? 'Switch to light theme' : 'Switch to dark theme',
+      toggleTheme: () => {
+        const t = this.state.theme === 'dark' ? 'light' : 'dark';
+        try { window.localStorage.setItem('tally-theme', t); } catch (e) {}
+        this.setState({ theme: t });
+      }
+    };
+  }
+  constructor(props) {
+    super(props);
+    this.state = { theme: this.initTheme(props), conn: 0, sel: { 1: true, 2: true, 4: true }, phase: 'select', tick: 0 };
+  }
+  componentWillUnmount() { if (this.timer) clearInterval(this.timer); }
+  renderVals() {
+    const s = this.state;
+    const connList = [
+      { name: 'Shared drive', count: '1,284' },
+      { name: 'CRM — Opportunities', count: '18.4k' },
+      { name: 'Email attachments', count: '362' },
+      { name: 'Uploads', count: '41' }
+    ];
+    const conns = connList.map((c, i) => ({ ...c, border: i === s.conn ? 'var(--accent)' : 'transparent', pick: () => this.setState({ conn: i }) }));
+    const raw = [
+      { id: 1, name: 'Q3_pipeline_east.csv', type: 'CSV', size: '1.6 MB', kb: 1600, modified: 'Oct 2, 2026', owner: 'Rev Ops', status: 'Not yet' },
+      { id: 2, name: 'forecast_call_oct14.docx', type: 'DOCX', size: '220 KB', kb: 220, modified: 'Oct 14, 2026', owner: 'Ama Mensah', status: 'Not yet' },
+      { id: 3, name: 'Q3_pipeline_west.csv', type: 'CSV', size: '1.8 MB', kb: 1800, modified: 'Oct 2, 2026', owner: 'Rev Ops', status: 'Indexed' },
+      { id: 4, name: 'QBR_deck_west.pptx', type: 'PPTX', size: '5.4 MB', kb: 5400, modified: 'Oct 9, 2026', owner: 'Ama Mensah', status: 'Not yet' },
+      { id: 5, name: 'territory_plan_2026.pdf', type: 'PDF', size: '2.1 MB', kb: 2100, modified: 'Jan 18, 2026', owner: 'Sales Ops', status: 'Not yet' },
+      { id: 6, name: 'win_rate_by_rep.xlsx', type: 'XLSX', size: '340 KB', kb: 340, modified: 'Oct 3, 2026', owner: 'Rev Ops', status: 'Indexed' },
+      { id: 7, name: 'comp_plan_Q3.pdf', type: 'PDF', size: '860 KB', kb: 860, modified: 'Jul 1, 2026', owner: 'Finance', status: 'Not yet' },
+      { id: 8, name: 'renewals_q3.csv', type: 'CSV', size: '410 KB', kb: 410, modified: 'Oct 5, 2026', owner: 'CS Ops', status: 'Indexed' },
+      { id: 9, name: 'rep_notes_sept.pdf', type: 'PDF', size: '1.2 MB', kb: 1200, modified: 'Sep 30, 2026', owner: 'Ama Mensah', status: 'Indexed' }
+    ];
+    const files = raw.map((f) => ({
+      ...f,
+      checked: !!s.sel[f.id],
+      bg: s.sel[f.id] ? 'var(--accent-soft)' : 'var(--surface)',
+      toggle: () => { const sel = { ...this.state.sel }; if (sel[f.id]) delete sel[f.id]; else sel[f.id] = true; this.setState({ sel }); }
+    }));
+    const picked = raw.filter((f) => s.sel[f.id]);
+    const kb = picked.reduce((a, f) => a + f.kb, 0);
+    const newCount = picked.filter((f) => f.status !== 'Indexed').length;
+    const allOn = picked.length === raw.length;
+    const stages = ['Queued', 'Reading', 'Chunking', 'Embedding', 'Ready'];
+    const chosen = picked.map((f, i) => {
+      if (f.status === 'Indexed') return { ...f, pct: 100, stage: 'Ready · cached' };
+      const p = Math.max(0, Math.min(100, s.tick * 9 - i * 22));
+      const st = p >= 100 ? 'Ready' : stages[Math.min(3, Math.floor(p / 25) + (p > 0 ? 1 : 0))];
+      return { ...f, pct: p, stage: st };
+    });
+    const ready = chosen.filter((f) => f.pct >= 100).length;
+    return {
+      ...this.themeVals(),
+      conns,
+      connName: connList[s.conn].name,
+      files,
+      selCount: picked.length,
+      selDetail: (kb >= 1000 ? (kb / 1000).toFixed(1) + ' MB' : kb + ' KB') + ' · ' + newCount + ' new to index · ' + (picked.length - newCount) + ' already in library',
+      allLabel: allOn ? 'Clear all' : 'Select all',
+      selectAll: () => { const sel = {}; if (!allOn) raw.forEach((f) => { sel[f.id] = true; }); this.setState({ sel }); },
+      clear: () => this.setState({ sel: {} }),
+      isSelect: s.phase === 'select',
+      isIngest: s.phase === 'ingest',
+      chosen,
+      ingestTitle: ready === chosen.length ? 'All ' + chosen.length + ' files ready' : 'Indexing ' + chosen.length + ' files · ' + ready + ' ready',
+      start: () => {
+        if (!picked.length) return;
+        this.setState({ phase: 'ingest', tick: 0 });
+        if (this.timer) clearInterval(this.timer);
+        this.timer = setInterval(() => {
+          if (this.state.tick > 20) { clearInterval(this.timer); return; }
+          this.setState({ tick: this.state.tick + 1 });
+        }, 350);
+      },
+      back: () => { if (this.timer) clearInterval(this.timer); this.setState({ phase: 'select', tick: 0 }); }
+    };
+  }
+}
+</script>
+
+
+</body></html>"
+  
